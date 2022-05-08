@@ -22,9 +22,11 @@ public class Movement : MonoBehaviour
         //Sets Controlls for player
         horizontalInput = Input.GetAxis("Horizontal");
         if (isOnGround)
+            //Moves player when arrow keys are pressed
             playerRb.AddForce(Vector2.right * horizontalInput * speed, ForceMode2D.Force);
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
+            //Makes player jump when space is pressed
             playerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             isOnGround = false;
         }

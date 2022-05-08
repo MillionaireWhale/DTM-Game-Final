@@ -19,6 +19,7 @@ public class Level_2_Trigger: MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //Loads Level 2 when the player collides with the Level 2 trigger
         SceneManager.LoadScene("Level 2", LoadSceneMode.Single);
     }
 }

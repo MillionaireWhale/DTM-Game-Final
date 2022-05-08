@@ -9,12 +9,14 @@ public class Point_Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Allows text to be printed
         counterText = GetComponent<Text>();
     }
     // Update is called once per frame
     void Update()
     //Sets the current amount of point adders to the point display
     {
+        //Adds points to the total points display
         if (counterText != null && counterText.text != Point_adder.totalPoints.ToString())
         {
             counterText.text = Point_adder.totalPoints.ToString();
